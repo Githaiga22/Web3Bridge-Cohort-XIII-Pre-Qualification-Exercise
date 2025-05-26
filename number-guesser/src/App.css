@@ -88,9 +88,10 @@ button:disabled {
 
 #feedback {
   font-weight: bold;
-  font-size: 1.1rem;
-  color: #222;
+  font-size: 1.3rem;
+  color: #000;
   min-height: 1.5em;
+  margin-top: 10px;
 }
 
 #remainingAttempts {
