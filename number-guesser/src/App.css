@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: #ffffff;
+  padding: 40px 30px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  animation: popIn 0.8s ease;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+h1, h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+input, select {
+  padding: 12px;
+  width: 80%;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin: 10px 0;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #66a6ff;
+}
+
+button {
+  background-color: #66a6ff;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #558de8;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#feedback {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #222;
+  min-height: 1.5em;
+}
+
+#remainingAttempts {
+  color: #d6336c;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+#restartBtn {
+  margin-top: 15px;
+  background-color: #28c76f;
+}
+
+#restartBtn:hover {
+  background-color: #1fbb5c;
+}
+
+#gameResult {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  background-color: #e63946;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+
+.logout-btn:hover {
+  background-color: #c1121f;
+}
