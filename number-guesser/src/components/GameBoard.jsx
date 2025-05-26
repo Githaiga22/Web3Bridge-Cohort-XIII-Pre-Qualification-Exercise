@@ -10,7 +10,7 @@ function GameBoard({ gameState, setGameState, onRestart, onLogout }) {
   useEffect(() => {
     if (gameState.attempts > 0) {
       setGuess('')
-      setFeedback('')
+      // setFeedback('')
       setGameResult('')
       setIsGameOver(false)
     }
